@@ -12,6 +12,10 @@ export default class FileSystem {
     temporary: 'TEMPORARY',
   };
 
+  static async list(path, storage = FileSystem.storage.backedUp) {
+    return await RNFileSystem.list(path, storage);
+  }
+
   static async writeToFile(path, contents, storage = FileSystem.storage.backedUp) {
     return await RNFileSystem.writeToFile(path, contents, storage);
   }
