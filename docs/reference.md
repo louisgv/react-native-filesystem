@@ -3,14 +3,14 @@
 There is only one module, FileSystem, that can be imported like this:
 
 ```javascript
-import FileSystem from 'react-native-filesystem';
+import FileSystem from 'react-native-filesystem-v1';
 ```
 
-This module works on iOS 8.0+ and Android Ice Cream Sandwich and newer (4.1.x / API-level 16).
+This module works on iOS 8.0+ and Android Ice Cream Sandwich and newer (4.1.x / API-level 16) & UWP 1.2.
 
 ## FileSystem
 
-static **writeToFile** (path: `string`, content: `string`, storage: `string?`): `Promise`
+static **writeToFile** (path: `string`, content: `string`, isAppend: `bool`, storage: `string?`): `Promise`
 
 Asynchronously writes the content to a file, and resolves the promise upon completion.
 Intermediary directories in the path are created automatically.
