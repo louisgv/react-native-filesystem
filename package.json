@@ -1,5 +1,5 @@
 {
-  "name": "react-native-filesystem-v1",
+  "name": "react-native-filesystem",
   "description": "Simple file system API for iOS & Android & Windows.",
   "author": "Ben Wixen <benwixen@gmail.com>, HuyNQ <huy@huynq.net>",
   "version": "0.10.10",
